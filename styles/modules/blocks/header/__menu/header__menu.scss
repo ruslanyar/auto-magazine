@@ -1,0 +1,10 @@
+.header__menu{
+  width: 100%;
+  min-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 0;
+  background-color: $colorPrime;
+  box-sizing: border-box;
+}

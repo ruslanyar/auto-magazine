@@ -1,0 +1,7 @@
+.header__menu-item{
+  @include font($fontFamily, 11px, 16px, normal, 400);
+  color: $colorSecond;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-right: 16px;
+}
