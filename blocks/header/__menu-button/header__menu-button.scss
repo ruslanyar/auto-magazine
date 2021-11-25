@@ -1,14 +1,18 @@
-.header__menu-button{
+.header__menu-button {
   width: 20px;
   height: 16px;
-  background-image: url('../../../../../images/menu_button.svg');
+  background-image: url('../images/menu_button.svg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-color: transparent;
   border: none;
   padding: 10px 0;
-  position: absolute;
-  top: 25px;
-  right: 0;
+  cursor: pointer;
+
+  transition: opacity, .3s linear;
+
+  &:hover {
+    opacity: .6;
+  }
 }

@@ -1,10 +1,16 @@
-.header__menu{
+.header__menu {
   width: 100%;
   min-height: 70px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   position: absolute;
-  top: 0;
+  top: -70px;
+  left: 0;
   background-color: $colorPrime;
   box-sizing: border-box;
+  z-index: 1;
+  opacity: 0;
+  transition: transform .8s ease-in .2s, opacity .4s linear .6s;
+  padding: 0 20px;
 }

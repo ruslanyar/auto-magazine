@@ -1,8 +1,12 @@
-.logo{
+.logo {
   width: 100px;
   height: 20px;
-  background-image: url('../../../../images/header_logo.svg');
+  background-image: url('../images/header_logo.svg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }

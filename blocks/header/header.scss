@@ -1,3 +1,6 @@
-.header{
-  position: sticky;
+.header {
+  display: flex;
+  justify-content: end;
+  position: relative;
+  border-bottom: 1px solid $colorSecond;
 }
