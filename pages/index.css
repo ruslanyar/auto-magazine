@@ -373,6 +373,10 @@ template {
   margin: 0 auto;
 }
 
+.page__lead {
+  padding: 60px 20px;
+}
+
 .header {
   display: flex;
   justify-content: end;
@@ -444,6 +448,36 @@ template {
 }
 .header__close-btn:hover {
   opacity: 0.6;
+}
+
+.lead {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.lead__title {
+  font-family: "Source Sans Pro", Arial, sans-serif;
+  font-size: 38px;
+  line-height: 50px;
+  font-style: normal;
+  font-weight: 400;
+  text-align: center;
+  margin: 0;
+}
+
+.lead__subtitle {
+  font-family: "Source Sans Pro", Arial, sans-serif;
+  font-size: 11px;
+  line-height: 14px;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.lead__image {
+  align-self: stretch;
 }
 
 .logo {
