@@ -1,5 +1,5 @@
 .lead__subtitle {
-  @include font($fontFamily, 11px, 14px, normal, 400);
+  @include font($fontFamily, 11px, 14px, normal, 400, $colorSecond);
   text-transform: uppercase;
   margin: 0;
 }

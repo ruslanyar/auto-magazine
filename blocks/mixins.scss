@@ -1,7 +1,8 @@
-@mixin font ($fontFamily, $fontSize, $lineHeight, $fontStyle, $fontWeight) {
+@mixin font ($fontFamily, $fontSize, $lineHeight, $fontStyle, $fontWeight, $colorSecond) {
   font-family: $fontFamily;
   font-size: $fontSize;
   line-height: $lineHeight;
   font-style: $fontStyle;
   font-weight: $fontWeight;
+  color: $colorSecond;
 }

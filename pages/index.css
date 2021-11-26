@@ -343,19 +343,17 @@ template {
   font-weight: 300;
   font-style: normal;
   font-display: swap;
-  src: url("fonts/SourceSansPro-Light.woff2") format("woff2"), url("fonts/SourceSansPro-Light.woff") format("woff");
+  src: url("../vendor/fonts/SourceSansPro-Light.woff2") format("woff2"), url("../vendor/fonts/SourceSansPro-Light.woff") format("woff");
 }
 @font-face {
   font-family: "Source Sans Pro";
   font-weight: 400;
   font-style: normal;
   font-display: swap;
-  src: url("fonts/SourceSansPro-Regular.woff2") format("woff2"), url("fonts/SourceSansPro-Regular.woff") format("woff");
+  src: url("../vendor/fonts/SourceSansPro-Regular.woff2") format("woff2"), url("../vendor/fonts/SourceSansPro-Regular.woff") format("woff");
 }
 .page {
-  font-family: "Source Sans Pro", Arial, sans-serif;
   background-color: #191D2C;
-  color: #E1FD2C;
 }
 
 .page__container {
@@ -375,6 +373,18 @@ template {
 
 .page__lead {
   padding: 60px 20px;
+}
+
+.page__description {
+  padding: 18px 20px;
+}
+
+.page__gallery {
+  padding: 20px;
+}
+
+.page__footer {
+  padding: 120px 20px 20px;
 }
 
 .header {
@@ -414,7 +424,7 @@ template {
   box-sizing: border-box;
   z-index: 1;
   opacity: 0;
-  transition: transform 0.8s ease-in 0.2s, opacity 0.4s linear 0.6s;
+  transition: transform 1s ease-in, opacity 0.8s linear 0.3s;
   padding: 0 20px;
 }
 
@@ -425,13 +435,14 @@ template {
   font-style: normal;
   font-weight: 400;
   color: #E1FD2C;
+  color: #E1FD2C;
   text-transform: uppercase;
   letter-spacing: 1px;
   margin-right: 16px;
 }
 
 .header__menu_is-active {
-  transform: translateY(70px);
+  transform: translateY(100%);
   opacity: 1;
 }
 
@@ -462,6 +473,7 @@ template {
   line-height: 50px;
   font-style: normal;
   font-weight: 400;
+  color: #E1FD2C;
   text-align: center;
   margin: 0;
 }
@@ -472,6 +484,7 @@ template {
   line-height: 14px;
   font-style: normal;
   font-weight: 400;
+  color: #E1FD2C;
   text-transform: uppercase;
   margin: 0;
 }
@@ -482,17 +495,43 @@ template {
   max-width: 720px;
 }
 
+.lead__link {
+  width: 280px;
+  height: 64px;
+  border: 1px solid #E1FD2C;
+  box-sizing: border-box;
+  font-family: "Source Sans Pro", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 60px;
+  font-style: normal;
+  font-weight: 400;
+  color: #E1FD2C;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #E1FD2C;
+}
+
 .logo {
-  width: 100px;
-  height: 20px;
   background-image: url("../images/header_logo.svg");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
+}
+
+.logo_place_header {
+  width: 100px;
+  height: 20px;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.logo_place_footer {
+  width: 280px;
+  height: 58px;
+  margin: 0 auto;
 }
 
 .list {
@@ -508,4 +547,94 @@ template {
 }
 .link:hover {
   opacity: 0.6;
+}
+
+.description__text {
+  font-family: "Source Sans Pro", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 27px;
+  font-style: normal;
+  font-weight: 300;
+  color: #E1FD2C;
+}
+
+.description__span-accent {
+  font-weight: 400;
+}
+
+.description__title {
+  font-family: "Source Sans Pro", Arial, sans-serif;
+  font-size: 22px;
+  line-height: 22px;
+  font-style: normal;
+  font-weight: 400;
+  color: #E1FD2C;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.description__list {
+  display: flex;
+  flex-direction: column;
+}
+
+.description__list-item {
+  font-family: "Source Sans Pro", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-style: normal;
+  font-weight: 300;
+  color: #E1FD2C;
+}
+
+.gallery__image {
+  width: 100%;
+  max-width: 720px;
+  display: block;
+}
+
+.gallery__title {
+  font-family: "Source Sans Pro", Arial, sans-serif;
+  font-size: 26px;
+  line-height: 26px;
+  font-style: normal;
+  font-weight: 400;
+  color: #E1FD2C;
+  margin: 0;
+}
+
+.gallery__button {
+  width: 24px;
+  height: 20px;
+  background-color: transparent;
+  background-size: 24px 20px;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: none;
+}
+
+.gallery__button_type_left {
+  background-image: url("../images/arrow.svg");
+}
+
+.gallery__button_type_right {
+  background-image: url("../images/arrow.svg");
+  transform: rotate(180deg);
+}
+
+.footer {
+  display: grid;
+  row-gap: 20px;
+}
+
+.footer__copyright {
+  font-family: "Source Sans Pro", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 13px;
+  font-style: normal;
+  font-weight: 300;
+  color: #E1FD2C;
+  letter-spacing: 1px;
+  margin: 0 0 0 12px;
 }/*# sourceMappingURL=index.css.map */

@@ -1,5 +1,5 @@
 .lead__title {
-  @include font($fontFamily, 38px, 50px, normal, 400);
+  @include font($fontFamily, 38px, 50px, normal, 400, $colorSecond);
   text-align: center;
   margin: 0;
 }

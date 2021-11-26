@@ -1,0 +1,4 @@
+.gallery__title {
+  @include font($fontFamily, 26px, 26px, normal, 400, $colorSecond);
+  margin: 0;
+}

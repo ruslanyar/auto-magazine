@@ -1,0 +1,5 @@
+.footer__copyright {
+  @include font($fontFamily, 13px, 13px, normal, 300, $colorSecond);
+  letter-spacing: 1px;
+  margin: 0 0 0 12px;
+}

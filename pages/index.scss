@@ -9,6 +9,9 @@
 @import '../blocks/page/__header/page__header.scss';
 @import '../blocks/page/__logo/page__logo.scss';
 @import '../blocks/page/__lead/page__lead.scss';
+@import '../blocks/page/__description/page__description.scss';
+@import '../blocks/page/__gallery/page__gallery.scss';
+@import '../blocks/page/__footer/page__footer.scss';
 // Header
 @import '../blocks/header/header.scss';
 @import '../blocks/header/__menu-button/header__menu-button.scss';
@@ -24,8 +27,37 @@
 @import '../blocks/lead/__link/lead__link.scss';
 // Logo
 @import '../blocks/logo/logo.scss';
+@import '../blocks/logo/_place/logo_place_header.scss';
+@import '../blocks/logo/_place/logo_place_footer.scss';
 // List
 @import '../blocks/list/list.scss';
 @import '../blocks/list/__item/list__item.scss';
 // Link
 @import '../blocks/link/link.scss';
+// Description
+@import '../blocks/description/description.scss';
+@import '../blocks/description/__text/description__text.scss';
+@import '../blocks/description/__span-accent/description__span-accent.scss';
+@import '../blocks/description/__pozitives/description__pozitives.scss';
+@import '../blocks/description/__negatives/description__negatives.scss';
+@import '../blocks/description/__title/description__title.scss';
+@import '../blocks/description/__list/description__list.scss';
+@import '../blocks/description/__list-item/description__list-item.scss';
+// Gallery
+@import '../blocks/gallery/gallery.scss';
+@import '../blocks/gallery/__container/gallery__container.scss';
+@import '../blocks/gallery/__image/gallery__image.scss';
+@import '../blocks/gallery/__title/gallery__title.scss';
+@import '../blocks/gallery/__button/gallery__button.scss';
+@import '../blocks/gallery/__button/_type/gallery__button_type_left.scss';
+@import '../blocks/gallery/__button/_type/gallery__button_type_right.scss';
+
+// Press
+
+// Subscribe
+
+// Form
+
+// Footer
+@import '../blocks/footer/footer.scss';
+@import '../blocks/footer/__copyright/footer__copyright.scss';
