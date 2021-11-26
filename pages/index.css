@@ -359,7 +359,7 @@ template {
 }
 
 .page__container {
-  max-width: 320px;
+  max-width: 1440px;
   margin: 0 auto;
   box-sizing: border-box;
 }
@@ -477,7 +477,9 @@ template {
 }
 
 .lead__image {
-  align-self: stretch;
+  display: block;
+  width: 100%;
+  max-width: 720px;
 }
 
 .logo {
