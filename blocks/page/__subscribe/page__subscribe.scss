@@ -1,3 +1,9 @@
 .page__subscribe {
-  padding: 0 20px;
+  padding: 20px;
+}
+
+@media all and (min-width: $breakpoint-tablet) {
+  .page__subscribe {
+    padding: 50px 0 50px 50px;
+  }
 }

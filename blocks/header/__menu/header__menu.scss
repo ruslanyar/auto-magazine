@@ -10,7 +10,6 @@
   background-color: $colorPrime;
   box-sizing: border-box;
   z-index: 1;
-  opacity: 0;
-  transition: transform 1s ease-in, opacity .8s linear .3s;
+  transition: transform .8s ease-in;
   padding: 0 20px;
 }

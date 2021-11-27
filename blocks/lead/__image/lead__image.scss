@@ -2,4 +2,12 @@
   display: block;
   width: 100%;
   max-width: 720px;
+  margin: 60px 0;
+  background-size: cover;
+}
+
+@media all and (min-width: $breakpoint-tablet) {
+  .lead__image {
+    margin: 100px 0;
+  }
 }

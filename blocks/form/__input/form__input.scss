@@ -22,3 +22,9 @@
     opacity: 0;
   }
 }
+
+@media all and (min-width: $breakpoint-tablet) {
+  .form__input {
+    width: 170px;
+  }
+}

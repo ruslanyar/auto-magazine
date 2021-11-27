@@ -1,0 +1,10 @@
+.qualities {
+  display: grid;
+  grid-area: qualities;
+}
+
+@media all and (min-width: $breakpoint-tablet) {
+  .qualities {
+    grid-template-columns: 1fr 1fr;
+  }
+}

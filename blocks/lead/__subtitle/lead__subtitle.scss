@@ -3,3 +3,10 @@
   text-transform: uppercase;
   margin: 0;
 }
+
+@media all and (min-width: $breakpoint-tablet) {
+  .lead__subtitle {
+    font-size: 19px;
+    line-height: 28px;
+  }
+}

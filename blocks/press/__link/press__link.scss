@@ -1,17 +1,26 @@
 .press__link {
+  @include font($fontFamily, 14px, 28px, normal, 400, $colorSecond);
   align-self: end;
   width: 88px;
   height: 42px;
   border: 1px solid $colorSecond;
   border-radius: 50%;
   text-align: center;
-  padding: 10px 0;
+  padding: 6px 0;
   box-sizing: border-box;
   text-decoration: none;
-  color: $colorSecond;
 
   &:hover {
     background-color: $colorSecond;
     color: $colorPrime;
+  }
+}
+
+@media all and (min-width: $breakpoint-tablet) {
+  .press__link {
+    width: 110px;
+    height: 52px;
+    font-size: 19px;
+    padding: 10px 0;
   }
 }

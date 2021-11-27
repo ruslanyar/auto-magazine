@@ -1,0 +1,7 @@
+.gallery {
+  border-bottom: 1px solid $colorSecond;
+  display: grid;
+  grid-template-rows: max-content 1fr;
+  row-gap: 50px;
+  grid-area: gallery;
+}

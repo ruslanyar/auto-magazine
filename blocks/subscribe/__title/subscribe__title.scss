@@ -1,3 +1,12 @@
 .subscribe__title {
-  @include font($fontFamily, 26px, 26px, normal, 400, $colorSecond)
+  @include font($fontFamily, 26px, 26px, normal, 400, $colorSecond);
+  margin: 0 0 14px;
+}
+
+@media all and (min-width: $breakpoint-tablet) {
+  .subscribe__title {
+    font-size: 46px;
+    line-height: 46px;
+    margin: 0 0 16px;
+  }
 }

@@ -3,6 +3,8 @@
 
 @import '../blocks/variables.scss';
 @import '../blocks/mixins.scss';
+
+@import '../blocks/content/content.scss';
 // Page
 @import '../blocks/page/page.scss';
 @import '../blocks/page/__container/page__container.scss';
@@ -14,6 +16,7 @@
 @import '../blocks/page/__footer/page__footer.scss';
 @import '../blocks/page/__subscribe/page__subscribe.scss';
 @import '../blocks/page/__press/page__press.scss';
+@import '../blocks/page/__qualities/page__qualities.scss';
 // Header
 @import '../blocks/header/header.scss';
 @import '../blocks/header/__menu-button/header__menu-button.scss';
@@ -41,11 +44,12 @@
 // Description
 @import '../blocks/description/description.scss';
 @import '../blocks/description/__text/description__text.scss';
-@import '../blocks/description/__pozitives/description__pozitives.scss';
-@import '../blocks/description/__negatives/description__negatives.scss';
-@import '../blocks/description/__title/description__title.scss';
-@import '../blocks/description/__list/description__list.scss';
-@import '../blocks/description/__list-item/description__list-item.scss';
+// Qualities
+@import '../blocks/qualities/qualities.scss';
+@import '../blocks/qualities/__article/qualities__article.scss';
+@import '../blocks/qualities/__title/qualities__title.scss';
+@import '../blocks/qualities/__list/qualities__list.scss';
+@import '../blocks/qualities/__list-item/qualities__list-item.scss';
 // Gallery
 @import '../blocks/gallery/gallery.scss';
 @import '../blocks/gallery/__container/gallery__container.scss';

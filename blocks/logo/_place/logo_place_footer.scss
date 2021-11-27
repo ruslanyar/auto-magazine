@@ -3,3 +3,12 @@
   height: 58px;
   margin: 0 auto;
 }
+
+@media all and (min-width: $breakpoint-tablet) {
+  .logo_place_footer {
+    width: 184px;
+    height: 38px;
+    justify-self: end;
+    margin: 0;
+  }
+}

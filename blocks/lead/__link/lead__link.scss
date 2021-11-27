@@ -16,3 +16,12 @@
     font-weight: 600;
   }
 }
+
+@media all and (min-width: $breakpoint-tablet) {
+  .lead__link {
+    width: 360px;
+    height: 64px;
+    font-size: 15px;
+    line-height: 60px;
+  }
+}

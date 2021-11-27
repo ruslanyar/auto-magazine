@@ -1,3 +1,9 @@
 .page__lead {
   padding: 60px 20px;
 }
+
+@media all and (min-width: $breakpoint-tablet) {
+  .page__lead {
+    padding: 100px 34px;
+  }
+}

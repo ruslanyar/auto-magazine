@@ -1,4 +1,9 @@
 .page__header {
   padding: 25px 20px;
-  box-sizing: border-box;
+}
+
+@media all and (min-width: $breakpoint-tablet) {
+  .page__header {
+    padding: 22px 34px;
+  }
 }

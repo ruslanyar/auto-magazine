@@ -1,3 +1,13 @@
 .press__text {
   @include font($fontFamily, 16px, 27px, normal, 300, $colorSecond);
+  margin: 0;
+  min-height: 204px;
+}
+
+@media all and (min-width: $breakpoint-tablet) {
+  .press__text {
+    min-height: 347px;
+    font-size: 30px;
+    line-height: 42px;
+  }
 }

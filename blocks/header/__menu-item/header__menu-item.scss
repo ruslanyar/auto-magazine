@@ -5,3 +5,10 @@
   letter-spacing: 1px;
   margin-right: 16px;
 }
+
+@media all and (min-width: $breakpoint-tablet) {
+  .header__menu-item {
+    font-size: 12px;
+    margin-right: 20px;
+  }
+}

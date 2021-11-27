@@ -1,0 +1,12 @@
+.radio-group {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+}
+
+@media all and (min-width: $breakpoint-tablet) {
+  .radio-group {
+    left: 50px;
+    bottom: 50px;
+  }
+}
