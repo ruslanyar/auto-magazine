@@ -352,6 +352,13 @@ template {
   font-display: swap;
   src: url("../vendor/fonts/SourceSansPro-Regular.woff2") format("woff2"), url("../vendor/fonts/SourceSansPro-Regular.woff") format("woff");
 }
+@font-face {
+  font-family: "Source Sans Pro";
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+  src: url("../vendor/fonts/SourceSansPro-SemiBold.woff2") format("woff2"), url("../vendor/fonts/SourceSansPro-SemiBold.woff") format("woff");
+}
 .page {
   background-color: #191D2C;
 }
@@ -388,6 +395,10 @@ template {
 }
 
 .page__subscribe {
+  padding: 0 20px;
+}
+
+.page__press {
   padding: 0 20px;
 }
 
@@ -514,6 +525,12 @@ template {
   text-transform: uppercase;
   text-align: center;
   color: #E1FD2C;
+  text-decoration: none;
+}
+.lead__link:hover {
+  background-color: #E1FD2C;
+  color: #191D2C;
+  font-weight: 600;
 }
 
 .logo {
@@ -553,6 +570,10 @@ template {
   opacity: 0.6;
 }
 
+.span-accent {
+  font-weight: 400;
+}
+
 .description__text {
   font-family: "Source Sans Pro", Arial, sans-serif;
   font-size: 16px;
@@ -560,10 +581,6 @@ template {
   font-style: normal;
   font-weight: 300;
   color: #E1FD2C;
-}
-
-.description__span-accent {
-  font-weight: 400;
 }
 
 .description__title {
@@ -616,6 +633,7 @@ template {
   background-position: center;
   background-repeat: no-repeat;
   border: none;
+  cursor: pointer;
 }
 
 .gallery__button_type_left {
@@ -625,6 +643,37 @@ template {
 .gallery__button_type_right {
   background-image: url("../images/arrow.svg");
   transform: rotate(180deg);
+}
+
+.press__article {
+  display: flex;
+  flex-direction: column;
+}
+
+.press__text {
+  font-family: "Source Sans Pro", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 27px;
+  font-style: normal;
+  font-weight: 300;
+  color: #E1FD2C;
+}
+
+.press__link {
+  align-self: end;
+  width: 88px;
+  height: 42px;
+  border: 1px solid #E1FD2C;
+  border-radius: 50%;
+  text-align: center;
+  padding: 10px 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: #E1FD2C;
+}
+.press__link:hover {
+  background-color: #E1FD2C;
+  color: #191D2C;
 }
 
 .subscribe__title {

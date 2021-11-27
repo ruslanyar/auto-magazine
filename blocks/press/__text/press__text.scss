@@ -1,0 +1,3 @@
+.press__text {
+  @include font($fontFamily, 16px, 27px, normal, 300, $colorSecond);
+}

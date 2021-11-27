@@ -15,3 +15,12 @@
   src: url('../vendor/fonts/SourceSansPro-Regular.woff2') format('woff2'),
        url('../vendor/fonts/SourceSansPro-Regular.woff') format('woff');
 }
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+  src: url('../vendor/fonts/SourceSansPro-SemiBold.woff2') format('woff2'),
+       url('../vendor/fonts/SourceSansPro-SemiBold.woff') format('woff');
+}

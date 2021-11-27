@@ -1,0 +1,17 @@
+.press__link {
+  align-self: end;
+  width: 88px;
+  height: 42px;
+  border: 1px solid $colorSecond;
+  border-radius: 50%;
+  text-align: center;
+  padding: 10px 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: $colorSecond;
+
+  &:hover {
+    background-color: $colorSecond;
+    color: $colorPrime;
+  }
+}

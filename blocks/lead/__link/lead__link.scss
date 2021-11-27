@@ -8,4 +8,11 @@
   text-transform: uppercase;
   text-align: center;
   color: $colorSecond;
+  text-decoration: none;
+
+  &:hover {
+    background-color: $colorSecond;
+    color: $colorPrime;
+    font-weight: 600;
+  }
 }
