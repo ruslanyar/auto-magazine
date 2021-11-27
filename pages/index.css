@@ -623,6 +623,64 @@ template {
   transform: rotate(180deg);
 }
 
+.subscribe__title {
+  font-family: "Source Sans Pro", Arial, sans-serif;
+  font-size: 26px;
+  line-height: 26px;
+  font-style: normal;
+  font-weight: 400;
+  color: #E1FD2C;
+}
+
+.subscribe__subtitle {
+  font-family: "Source Sans Pro", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+  font-style: normal;
+  font-weight: 400;
+  color: #E1FD2C;
+}
+
+.form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.form__input {
+  width: 140px;
+  height: 32px;
+  font-family: "Source Sans Pro", Arial, sans-serif;
+  font-size: 9px;
+  line-height: 18px;
+  font-style: normal;
+  font-weight: 400;
+  color: #E1FD2C;
+  background-color: transparent;
+  letter-spacing: 1px;
+  border: 1px solid #E1FD2C;
+  display: block;
+  box-sizing: border-box;
+}
+
+.form__input_type_email {
+  width: 200px;
+}
+
+.form__submit-btn {
+  width: 80px;
+  height: 32px;
+  font-family: "Source Sans Pro", Arial, sans-serif;
+  font-size: 10px;
+  line-height: 13px;
+  font-style: normal;
+  font-weight: 400;
+  color: #191D2C;
+  letter-spacing: 1px;
+  background-color: #E1FD2C;
+  border: none;
+  cursor: pointer;
+}
+
 .footer {
   display: grid;
   row-gap: 20px;

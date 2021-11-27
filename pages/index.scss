@@ -55,9 +55,14 @@
 // Press
 
 // Subscribe
-
+@import '../blocks/subscribe/subscribe.scss';
+@import '../blocks/subscribe/__title/subscribe__title.scss';
+@import '../blocks/subscribe/__subtitle/subscribe__subtitle.scss';
 // Form
-
+@import '../blocks/form/form.scss';
+@import '../blocks/form/__input/form__input.scss';
+@import '../blocks/form/__input/_type/form__input_type_email.scss';
+@import '../blocks/form/__submit-btn/form__submit-btn.scss';
 // Footer
 @import '../blocks/footer/footer.scss';
 @import '../blocks/footer/__copyright/footer__copyright.scss';

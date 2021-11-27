@@ -1,0 +1,10 @@
+.form__input {
+  width: 140px;
+  height: 32px;
+  @include font($fontFamily, 9px, 18px, normal, 400, $colorSecond);
+  background-color: transparent;
+  letter-spacing: 1px;
+  border: 1px solid $colorSecond;
+  display: block;
+  box-sizing: border-box;
+}
