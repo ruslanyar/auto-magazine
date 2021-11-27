@@ -488,9 +488,14 @@ template {
 .header {
   display: flex;
   justify-content: end;
-  position: relative;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: #191D2C;
   border-bottom: 1px solid #E1FD2C;
   grid-area: header;
+  transition: transform 0.8s;
 }
 
 .header__menu-button {
@@ -593,6 +598,10 @@ template {
     display: none;
   }
 }
+.header_hidden {
+  transform: translateY(-100%);
+}
+
 .lead {
   display: flex;
   flex-direction: column;

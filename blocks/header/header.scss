@@ -1,7 +1,11 @@
 .header {
   display: flex;
   justify-content: end;
-  position: relative;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: $colorPrime;
   border-bottom: 1px solid $colorSecond;
   grid-area: header;
+  transition: transform .8s;
 }
