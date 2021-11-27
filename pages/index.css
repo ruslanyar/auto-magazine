@@ -387,6 +387,10 @@ template {
   padding: 120px 20px 20px;
 }
 
+.page__subscribe {
+  padding: 0 20px;
+}
+
 .header {
   display: flex;
   justify-content: end;
@@ -660,6 +664,29 @@ template {
   border: 1px solid #E1FD2C;
   display: block;
   box-sizing: border-box;
+  text-transform: uppercase;
+  padding-left: 11px;
+}
+.form__input::-moz-placeholder {
+  color: #E1FD2C;
+}
+.form__input:-ms-input-placeholder {
+  color: #E1FD2C;
+}
+.form__input::placeholder {
+  color: #E1FD2C;
+}
+.form__input:focus {
+  outline: none;
+}
+.form__input:focus::-moz-placeholder {
+  opacity: 0;
+}
+.form__input:focus:-ms-input-placeholder {
+  opacity: 0;
+}
+.form__input:focus::placeholder {
+  opacity: 0;
 }
 
 .form__input_type_email {

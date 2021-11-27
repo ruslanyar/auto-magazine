@@ -7,4 +7,18 @@
   border: 1px solid $colorSecond;
   display: block;
   box-sizing: border-box;
+  text-transform: uppercase;
+  padding-left: 11px;
+
+  &::placeholder {
+    color: $colorSecond;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:focus::placeholder {
+    opacity: 0;
+  }
 }
