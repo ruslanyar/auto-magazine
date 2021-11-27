@@ -7,3 +7,9 @@
     padding: 22px 34px;
   }
 }
+
+@media all and (min-width: $breakpoint-desktop) {
+  .page__header {
+    padding: 25px 50px;
+  }
+}

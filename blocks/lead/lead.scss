@@ -5,3 +5,10 @@
   border-bottom: 1px solid $colorSecond;
   grid-area: lead;
 }
+
+@media all and (min-width: $breakpoint-desktop) {
+  .lead {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}

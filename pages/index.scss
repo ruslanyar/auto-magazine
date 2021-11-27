@@ -30,6 +30,7 @@
 @import '../blocks/lead/__subtitle/lead__subtitle.scss';
 @import '../blocks/lead/__image/lead__image.scss';
 @import '../blocks/lead/__link/lead__link.scss';
+@import '../blocks/lead/__text/lead__text.scss';
 // Logo
 @import '../blocks/logo/logo.scss';
 @import '../blocks/logo/_place/logo_place_header.scss';
@@ -63,6 +64,7 @@
 @import '../blocks/press/__article/press__article.scss';
 @import '../blocks/press/__text/press__text.scss';
 @import '../blocks/press/__link/press__link.scss';
+@import '../blocks/press/__title/press__title.scss';
 // Radio-group
 @import '../blocks/radio-group/radio-group.scss';
 @import '../blocks/radio-group/__item/radio-group__item.scss';
@@ -78,3 +80,5 @@
 // Footer
 @import '../blocks/footer/footer.scss';
 @import '../blocks/footer/__copyright/footer__copyright.scss';
+
+@import '../blocks/empty/empty.scss';

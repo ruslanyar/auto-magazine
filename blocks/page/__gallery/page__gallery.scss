@@ -7,3 +7,9 @@
     padding: 34px 34px 50px;
   }
 }
+
+@media all and (min-width: $breakpoint-desktop) {
+  .page__gallery {
+    padding: 0 0 50px;
+  }
+}

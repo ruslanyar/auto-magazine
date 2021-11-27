@@ -24,3 +24,9 @@
     padding: 13px 0;
   }
 }
+
+@media all and (min-width: $breakpoint-desktop) {
+  .header__menu-button {
+    display: none;
+  }
+}

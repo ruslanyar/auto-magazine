@@ -3,3 +3,9 @@
   row-gap: 20px;
   grid-area: footer;
 }
+
+@media all and (min-width: $breakpoint-desktop) {
+  .footer {
+    border-left: 1px solid $colorSecond;
+  }
+}

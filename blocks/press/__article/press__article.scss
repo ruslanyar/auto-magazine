@@ -1,4 +1,14 @@
 .press__article {
   display: flex;
   flex-direction: column;
+  grid-row: 1/2;
+  grid-column: 1/2;
+}
+
+@media all and (min-width: $breakpoint-desktop) {
+  .press__article {
+    border-left: 1px solid $colorSecond;
+    grid-column: 2/3;
+    padding: 50px;
+  }
 }

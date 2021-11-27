@@ -13,3 +13,9 @@
     opacity: .6;
   }
 }
+
+@media all and (min-width: $breakpoint-desktop) {
+  .header__close-btn {
+    display: none;
+  }
+}

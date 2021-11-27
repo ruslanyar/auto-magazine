@@ -12,3 +12,9 @@
     margin-left: 16px;
   }
 }
+
+@media all and (min-width: $breakpoint-desktop) {
+  .gallery__title {
+    margin-left: 50px;
+  }
+}

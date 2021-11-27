@@ -11,3 +11,11 @@
     margin: 100px 0;
   }
 }
+
+@media all and (min-width: $breakpoint-desktop) {
+  .lead__image {
+    grid-row: 1/-1;
+    grid-column: 2/3;
+    margin: 0;
+  }
+}

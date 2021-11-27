@@ -1,0 +1,12 @@
+.empty {
+  display: none;
+  grid-area: empty;
+}
+
+@media all and (min-width: $breakpoint-desktop) {
+  .empty {
+    display: block;
+    border-bottom: 1px solid $colorSecond;
+    border-left: 1px solid $colorSecond;
+  }
+}

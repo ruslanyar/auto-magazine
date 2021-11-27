@@ -8,3 +8,9 @@
     margin-right: 88px;
   }
 }
+
+@media all and (min-width: $breakpoint-desktop) {
+  .gallery__button_type_left {
+    margin-right: 122px;
+  }
+}

@@ -12,9 +12,16 @@
 
 @media all and (min-width: $breakpoint-tablet) {
   .page__container {
+    grid-template-columns: max-content 1fr;
     grid-template-areas:
-  'header header'
-  'content content'
-  'subscribe footer';
+      'header header'
+      'content content'
+      'subscribe footer';
+  }
+}
+
+@media all and (min-width: $breakpoint-desktop) {
+  .page__container {
+    grid-template-columns: 1fr 1fr;
   }
 }

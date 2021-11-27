@@ -25,3 +25,12 @@
     line-height: 60px;
   }
 }
+
+@media all and (min-width: $breakpoint-desktop) {
+  .lead__link {
+    justify-self: center;
+    align-self: end;
+    grid-row: 1/2;
+    grid-column: 1/2;
+  }
+}
