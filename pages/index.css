@@ -363,7 +363,7 @@ template {
   grid-area: content;
 }
 
-@media all and (min-width: 1024px) {
+@media all and (min-width: 1150px) {
   .content {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -389,7 +389,7 @@ template {
     grid-template-areas: "header header" "content content" "subscribe footer";
   }
 }
-@media all and (min-width: 1024px) {
+@media all and (min-width: 1150px) {
   .page__container {
     grid-template-columns: 1fr 1fr;
   }
@@ -403,7 +403,7 @@ template {
     padding: 22px 34px;
   }
 }
-@media all and (min-width: 1024px) {
+@media all and (min-width: 1150px) {
   .page__header {
     padding: 25px 50px;
   }
@@ -421,7 +421,7 @@ template {
     padding: 100px 34px;
   }
 }
-@media all and (min-width: 1024px) {
+@media all and (min-width: 1150px) {
   .page__lead {
     padding: 150px 0;
   }
@@ -444,7 +444,7 @@ template {
     padding: 34px 34px 50px;
   }
 }
-@media all and (min-width: 1024px) {
+@media all and (min-width: 1150px) {
   .page__gallery {
     padding: 0 0 50px;
   }
@@ -476,7 +476,7 @@ template {
     padding: 50px;
   }
 }
-@media all and (min-width: 1024px) {
+@media all and (min-width: 1150px) {
   .page__press {
     padding: 0;
   }
@@ -522,7 +522,7 @@ template {
     padding: 13px 0;
   }
 }
-@media all and (min-width: 1024px) {
+@media all and (min-width: 1150px) {
   .header__menu-button {
     display: none;
   }
@@ -548,7 +548,7 @@ template {
     padding: 0 34px;
   }
 }
-@media all and (min-width: 1024px) {
+@media all and (min-width: 1150px) {
   .header__menu {
     position: static;
     z-index: 0;
@@ -593,7 +593,7 @@ template {
   opacity: 0.6;
 }
 
-@media all and (min-width: 1024px) {
+@media all and (min-width: 1150px) {
   .header__close-btn {
     display: none;
   }
@@ -610,7 +610,7 @@ template {
   grid-area: lead;
 }
 
-@media all and (min-width: 1024px) {
+@media all and (min-width: 1150px) {
   .lead {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -665,7 +665,7 @@ template {
     margin: 100px 0;
   }
 }
-@media all and (min-width: 1024px) {
+@media all and (min-width: 1150px) {
   .lead__image {
     grid-row: 1/-1;
     grid-column: 2/3;
@@ -703,7 +703,7 @@ template {
     line-height: 60px;
   }
 }
-@media all and (min-width: 1024px) {
+@media all and (min-width: 1150px) {
   .lead__link {
     justify-self: center;
     align-self: end;
@@ -777,7 +777,7 @@ template {
   grid-area: description;
 }
 
-@media all and (min-width: 1024px) {
+@media all and (min-width: 1150px) {
   .description {
     border-right: 1px solid #E1FD2C;
   }
@@ -875,12 +875,23 @@ template {
 
 .gallery__container {
   justify-self: center;
+  display: flex;
+  gap: 20px;
+  overflow-x: scroll;
+  -ms-scroll-snap-type: x mandatory;
+      scroll-snap-type: x mandatory;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.gallery__container::-webkit-scrollbar {
+  display: none;
 }
 
 .gallery__image {
   width: 100%;
   max-width: 720px;
   display: block;
+  scroll-snap-align: center;
 }
 
 .gallery__title {
@@ -902,7 +913,7 @@ template {
     margin-left: 16px;
   }
 }
-@media all and (min-width: 1024px) {
+@media all and (min-width: 1150px) {
   .gallery__title {
     margin-left: 50px;
   }
@@ -938,7 +949,7 @@ template {
     margin-right: 88px;
   }
 }
-@media all and (min-width: 1024px) {
+@media all and (min-width: 1150px) {
   .gallery__button_type_left {
     margin-right: 122px;
   }
@@ -953,7 +964,7 @@ template {
     margin-right: 16px;
   }
 }
-@media all and (min-width: 1024px) {
+@media all and (min-width: 1150px) {
   .gallery__button_type_right {
     margin-right: 50px;
   }
@@ -965,7 +976,7 @@ template {
   grid-area: press;
 }
 
-@media all and (min-width: 1024px) {
+@media all and (min-width: 1150px) {
   .press {
     grid-template-columns: 1fr 1fr;
   }
@@ -977,7 +988,7 @@ template {
   grid-column: 1/2;
 }
 
-@media all and (min-width: 1024px) {
+@media all and (min-width: 1150px) {
   .press__article {
     border-left: 1px solid #E1FD2C;
     grid-column: 2/3;
@@ -1042,7 +1053,7 @@ template {
   color: #E1FD2C;
 }
 
-@media all and (min-width: 1024px) {
+@media all and (min-width: 1150px) {
   .press__title {
     display: inline-block;
     margin: 0;
@@ -1062,7 +1073,7 @@ template {
   justify-content: space-between;
 }
 
-@media all and (min-width: 1024px) {
+@media all and (min-width: 1150px) {
   .radio-group {
     grid-column: 2/3;
     margin: 0 0 50px 50px;
@@ -1211,7 +1222,7 @@ template {
   grid-area: footer;
 }
 
-@media all and (min-width: 1024px) {
+@media all and (min-width: 1150px) {
   .footer {
     border-left: 1px solid #E1FD2C;
   }
@@ -1238,7 +1249,7 @@ template {
   grid-area: empty;
 }
 
-@media all and (min-width: 1024px) {
+@media all and (min-width: 1150px) {
   .empty {
     display: block;
     border-bottom: 1px solid #E1FD2C;

@@ -4,6 +4,9 @@ const menu = header.querySelector('.header__menu');
 const closeBtn = header.querySelector('.header__close-btn');
 const radioBtns = document.querySelectorAll('.radio-group__item');
 const articles = document.querySelectorAll('.press__article');
+const galleryBtnLeft = document.querySelector('.gallery__button_type_left');
+const galleryBtnRight = document.querySelector('.gallery__button_type_right');
+const subscribeForm = document.querySelector('.form');
 
 menuBtn.addEventListener('click', () => menu.classList.add('header__menu_is-active'));
 closeBtn.addEventListener('click', () => menu.classList.remove('header__menu_is-active'));
@@ -25,8 +28,41 @@ window.addEventListener('scroll', () => {
   prevScroll = currentScroll;
 });
 
-radioBtns.forEach(item => item.addEventListener('click', () => {
-  articles.forEach(elem => {
-    elem.classList.toggle('press__article_hidden');
+radioBtns.forEach((item, index) => item.addEventListener('click', () => {
+  articles.forEach((elem, i) => {
+    if (index === i) {
+      elem.classList.remove('press__article_hidden');
+    } else {
+      elem.classList.add('press__article_hidden');
+    }
   });
 }));
+
+const scrollContainer = document.querySelector('.gallery__container');
+const scrollElement = document.querySelector('.gallery__image');
+
+galleryBtnLeft.addEventListener('click', () => {
+  scrollContainer.scrollLeft -= scrollElement.clientWidth;
+});
+
+galleryBtnRight.addEventListener('click', () => {
+  scrollContainer.scrollLeft += scrollElement.clientWidth;
+});
+
+subscribeForm.addEventListener('submit', (evt) => {
+  evt.preventDefault();
+  subscribeForm.reset();
+});
+
+const subscribeFormSubmitBtn = subscribeForm.querySelector('.form__submit-btn');
+const subscribeFormInputName = subscribeForm.querySelector('.form__input_type_name');
+const subscribeFormInputSurname = subscribeForm.querySelector('.form__input_type_surname');
+const subscribeFormInputEmail = subscribeForm.querySelector('.form__input_type_email');
+
+subscribeForm.addEventListener('input', () => {
+  if (subscribeFormInputName.value && subscribeFormInputSurname.value && subscribeFormInputEmail.value) {
+    subscribeFormSubmitBtn.textContent = 'готово!';
+  } else {
+    subscribeFormSubmitBtn.textContent = 'подписка';
+  };
+});
