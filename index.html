@@ -89,8 +89,10 @@
             class="press__link">Читать</a>
         </div> -->
         <div class="radio-group">
-          <input type="radio" name="press" class="radio-group__item">
-          <input type="radio" name="press" class="radio-group__item">
+          <input type="radio" name="press" id="engadget" class="radio-group__item" checked>
+          <label for="engadget" class="radio-group__label"></label>
+          <input type="radio" name="press" id="driveru" class="radio-group__item">
+          <label for="driveru" class="radio-group__label"></label>
         </div>
       </section>
     </main>
@@ -100,7 +102,7 @@
       <p class="subscribe__subtitle">На новые спецвыпуски машин.</p>
       <form class="form">
         <input type="text" name="first-name" placeholder="имя" class="form__input" required>
-        <input type="text" name="second-name" placeholder="фамилия" class="form__input">
+        <input type="text" name="second-name" placeholder="фамилия" class="form__input" required>
         <input type="email" name="email" placeholder="почта" class="form__input form__input_type_email" required>
         <button type="submit" class="form__submit-btn">подписка</button>
       </form>
