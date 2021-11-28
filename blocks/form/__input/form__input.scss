@@ -9,6 +9,8 @@
   box-sizing: border-box;
   text-transform: uppercase;
   padding-left: 11px;
+  text-indent: 0;
+  transition: text-indent 2s ease;
 
   &::placeholder {
     color: $colorSecond;
@@ -19,7 +21,8 @@
   }
 
   &:focus::placeholder {
-    opacity: 0;
+    text-indent: -100%;
+    transition: text-indent 2s ease;
   }
 }
 

@@ -60,7 +60,7 @@ const subscribeFormInputSurname = subscribeForm.querySelector('.form__input_type
 const subscribeFormInputEmail = subscribeForm.querySelector('.form__input_type_email');
 
 subscribeForm.addEventListener('input', () => {
-  if (subscribeFormInputName.value && subscribeFormInputSurname.value && subscribeFormInputEmail.value) {
+  if (subscribeFormInputName.value && subscribeFormInputSurname.value && subscribeFormInputEmail.value.includes('@')) {
     subscribeFormSubmitBtn.textContent = 'готово!';
   } else {
     subscribeFormSubmitBtn.textContent = 'подписка';

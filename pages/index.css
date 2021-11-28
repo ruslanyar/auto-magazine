@@ -1163,6 +1163,8 @@ template {
   box-sizing: border-box;
   text-transform: uppercase;
   padding-left: 11px;
+  text-indent: 0;
+  transition: text-indent 2s ease;
 }
 .form__input::-moz-placeholder {
   color: #E1FD2C;
@@ -1177,13 +1179,18 @@ template {
   outline: none;
 }
 .form__input:focus::-moz-placeholder {
-  opacity: 0;
+  text-indent: -100%;
+  -moz-transition: text-indent 2s ease;
+  transition: text-indent 2s ease;
 }
 .form__input:focus:-ms-input-placeholder {
-  opacity: 0;
+  text-indent: -100%;
+  -ms-transition: text-indent 2s ease;
+  transition: text-indent 2s ease;
 }
 .form__input:focus::placeholder {
-  opacity: 0;
+  text-indent: -100%;
+  transition: text-indent 2s ease;
 }
 
 @media all and (min-width: 640px) {
