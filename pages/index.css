@@ -1194,9 +1194,6 @@ template {
   text-indent: -100%;
   transition: text-indent 2s ease;
 }
-.form__input:invalid {
-  outline: 1px solid red;
-}
 
 @media all and (min-width: 640px) {
   .form__input {
