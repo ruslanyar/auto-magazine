@@ -1049,6 +1049,10 @@ template {
     padding: 50px;
   }
 }
+.press__article_hidden {
+  display: none;
+}
+
 .radio-group {
   width: 38px;
   grid-row: 1/2;
