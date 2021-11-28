@@ -688,6 +688,7 @@ template {
   text-align: center;
   color: #E1FD2C;
   text-decoration: none;
+  transition: all 0.4s linear;
 }
 .lead__link:hover {
   background-color: #E1FD2C;
@@ -1029,6 +1030,7 @@ template {
   padding: 6px 0;
   box-sizing: border-box;
   text-decoration: none;
+  transition: all 0.4s linear;
 }
 .press__link:hover {
   background-color: #E1FD2C;
@@ -1191,6 +1193,9 @@ template {
 .form__input:focus::placeholder {
   text-indent: -100%;
   transition: text-indent 2s ease;
+}
+.form__input:invalid {
+  outline: 1px solid red;
 }
 
 @media all and (min-width: 640px) {
