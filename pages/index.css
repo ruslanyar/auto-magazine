@@ -1066,7 +1066,7 @@ template {
   display: none;
 }
 
-.radio-group {
+.press__pagination {
   width: 38px;
   grid-row: 1/2;
   grid-column: 1/2;
@@ -1076,30 +1076,22 @@ template {
 }
 
 @media all and (min-width: 1150px) {
-  .radio-group {
+  .press__pagination {
     grid-column: 2/3;
     margin: 0 0 50px 50px;
   }
 }
-.radio-group__item {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  clip: rect(0 0 0 0);
-}
-
-.radio-group__item:checked + .radio-group__label {
-  background-color: #E1FD2C;
-}
-
-.radio-group__label {
-  position: relative;
-  display: block;
+.press__pagination-item {
   width: 12px;
   height: 12px;
+  background-color: transparent;
   border: 1px solid #E1FD2C;
   border-radius: 50%;
+  cursor: pointer;
+}
+
+.press__pagination-item_is-active {
+  background-color: #E1FD2C;
 }
 
 .subscribe {

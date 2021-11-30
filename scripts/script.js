@@ -2,7 +2,7 @@ const header = document.querySelector('.header');
 const menuBtn = header.querySelector('.header__menu-button');
 const menu = header.querySelector('.header__menu');
 const closeBtn = header.querySelector('.header__close-btn');
-const radioBtns = document.querySelectorAll('.radio-group__item');
+const paginationBtns = document.querySelectorAll('.press__pagination-item');
 const articles = document.querySelectorAll('.press__article');
 const galleryBtnLeft = document.querySelector('.gallery__button_type_left');
 const galleryBtnRight = document.querySelector('.gallery__button_type_right');
@@ -28,7 +28,10 @@ window.addEventListener('scroll', () => {
   prevScroll = currentScroll;
 });
 
-radioBtns.forEach((item, index) => item.addEventListener('click', () => {
+paginationBtns.forEach((item, index, btns) => item.addEventListener('click', (evt) => {
+  btns.forEach(el => el.classList.remove('press__pagination-item_is-active'));
+  evt.target.classList.add('press__pagination-item_is-active');
+
   articles.forEach((elem, i) => {
     if (index === i) {
       elem.classList.remove('press__article_hidden');
