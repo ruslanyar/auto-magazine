@@ -3,19 +3,19 @@
 
 @import '../blocks/variables.scss';
 @import '../blocks/mixins.scss';
-
+// Content
 @import '../blocks/content/content.scss';
+@import '../blocks/content/__description/content__description.scss';
+@import '../blocks/content/__gallery/content__gallery.scss';
+@import '../blocks/content/__lead/content__lead.scss';
+@import '../blocks/content/__press/content__press.scss';
 // Page
 @import '../blocks/page/page.scss';
 @import '../blocks/page/__container/page__container.scss';
 @import '../blocks/page/__header/page__header.scss';
 @import '../blocks/page/__logo/page__logo.scss';
-@import '../blocks/page/__lead/page__lead.scss';
-@import '../blocks/page/__description/page__description.scss';
-@import '../blocks/page/__gallery/page__gallery.scss';
 @import '../blocks/page/__footer/page__footer.scss';
 @import '../blocks/page/__subscribe/page__subscribe.scss';
-@import '../blocks/page/__press/page__press.scss';
 @import '../blocks/page/__qualities/page__qualities.scss';
 // Header
 @import '../blocks/header/header.scss';
