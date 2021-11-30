@@ -5,7 +5,7 @@
   top: 0;
   z-index: 1;
   background-color: $colorPrime;
-  border-bottom: 1px solid $colorSecond;
+  border-bottom: $border;
   grid-area: header;
   transition: transform .8s;
 }

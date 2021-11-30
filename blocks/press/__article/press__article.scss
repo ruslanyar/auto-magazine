@@ -7,7 +7,7 @@
 
 @media all and (min-width: $breakpoint-desktop) {
   .press__article {
-    border-left: 1px solid $colorSecond;
+    border-left: $border;
     grid-column: 2/3;
     padding: 50px;
   }

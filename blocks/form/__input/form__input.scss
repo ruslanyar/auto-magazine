@@ -4,7 +4,7 @@
   @include font($fontFamily, 9px, 18px, normal, 400, $colorSecond);
   background-color: transparent;
   letter-spacing: 1px;
-  border: 1px solid $colorSecond;
+  border: $border;
   display: block;
   box-sizing: border-box;
   text-transform: uppercase;
