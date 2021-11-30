@@ -1,6 +1,6 @@
 .press {
   display: grid;
-  border-bottom: 1px solid $colorSecond;
+  border-bottom: $border;
   position: relative;
   grid-area: press;
 }

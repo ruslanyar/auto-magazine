@@ -1,7 +1,7 @@
 .lead__link {
   width: 280px;
   height: 64px;
-  border: 1px solid $colorSecond;
+  border: $border;
   box-sizing: border-box;
   @include font ($fontFamily, 15px, 60px, normal, 400, $colorSecond);
   letter-spacing: 1px;

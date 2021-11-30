@@ -1,6 +1,6 @@
 .qualities__article {
   padding: 20px;
-  border-bottom: 1px solid $colorSecond;
+  border-bottom: $border;
   box-sizing: border-box;
 }
 
@@ -8,7 +8,7 @@
   .qualities__article {
     padding: 40px 50px;
     min-height: 506px;
-    border-right: 1px solid $colorSecond;
+    border-right: $border;
   }
 
   .qualities__article:last-of-type {
