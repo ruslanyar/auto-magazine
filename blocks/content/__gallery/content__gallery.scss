@@ -1,15 +1,15 @@
-.page__press {
+.content__gallery {
   padding: 20px;
 }
 
 @media all and (min-width: $breakpoint-tablet) {
-  .page__press {
-    padding: 50px;
+  .content__gallery {
+    padding: 34px 34px 50px;
   }
 }
 
 @media all and (min-width: $breakpoint-desktop) {
-  .page__press {
-    padding: 0;
+  .content__gallery {
+    padding: 0 0 50px;
   }
 }
