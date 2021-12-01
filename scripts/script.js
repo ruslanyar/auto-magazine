@@ -28,18 +28,21 @@ window.addEventListener('scroll', () => {
   prevScroll = currentScroll;
 });
 
-paginationBtns.forEach((item, index, btns) => item.addEventListener('click', (evt) => {
-  btns.forEach(el => el.classList.remove('press__pagination-item_is-active'));
-  evt.target.classList.add('press__pagination-item_is-active');
+paginationBtns.forEach((item, index) => {
+  item.addEventListener('click', (evt) => {
+    const activeBtn = document.querySelector('.press__pagination-item_is-active');
+    activeBtn.classList.remove('press__pagination-item_is-active');
+    evt.target.classList.add('press__pagination-item_is-active');
 
-  articles.forEach((elem, i) => {
-    if (index === i) {
-      elem.classList.remove('press__article_hidden');
-    } else {
-      elem.classList.add('press__article_hidden');
-    }
+    articles.forEach((elem, i) => {
+      if (index === i) {
+        elem.classList.remove('press__article_hidden');
+      } else {
+        elem.classList.add('press__article_hidden');
+      }
+    });
   });
-}));
+});
 
 const scrollContainer = document.querySelector('.gallery__container');
 const scrollElement = document.querySelector('.gallery__image');
@@ -52,20 +55,10 @@ galleryBtnRight.addEventListener('click', () => {
   scrollContainer.scrollLeft += scrollElement.clientWidth;
 });
 
+const subscribeFormSubmitBtn = subscribeForm.querySelector('.form__submit-btn');
+
 subscribeForm.addEventListener('submit', (evt) => {
   evt.preventDefault();
+  subscribeFormSubmitBtn.textContent = 'готово!';
   subscribeForm.reset();
-});
-
-const subscribeFormSubmitBtn = subscribeForm.querySelector('.form__submit-btn');
-const subscribeFormInputName = subscribeForm.querySelector('.form__input_type_name');
-const subscribeFormInputSurname = subscribeForm.querySelector('.form__input_type_surname');
-const subscribeFormInputEmail = subscribeForm.querySelector('.form__input_type_email');
-
-subscribeForm.addEventListener('input', () => {
-  if (subscribeFormInputName.value && subscribeFormInputSurname.value && subscribeFormInputEmail.value.includes('@')) {
-    subscribeFormSubmitBtn.textContent = 'готово!';
-  } else {
-    subscribeFormSubmitBtn.textContent = 'подписка';
-  };
 });
