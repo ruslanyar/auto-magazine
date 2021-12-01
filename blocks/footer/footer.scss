@@ -2,6 +2,13 @@
   display: grid;
   row-gap: 20px;
   grid-area: footer;
+  justify-content: center;
+}
+
+@media all and (min-width: $breakpoint-tablet) {
+  .footer {
+    justify-content: space-between;
+  }
 }
 
 @media all and (min-width: $breakpoint-desktop) {

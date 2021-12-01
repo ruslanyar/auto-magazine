@@ -429,22 +429,8 @@ template {
   max-width: 1440px;
   margin: 0 auto;
   box-sizing: border-box;
-  display: grid;
-  grid-template-areas: "header" "content" "subscribe" "footer";
 }
 
-@media all and (min-width: 640px) {
-  .page__container {
-    grid-template-columns: -webkit-max-content 1fr;
-    grid-template-columns: max-content 1fr;
-    grid-template-areas: "header header" "content content" "subscribe footer";
-  }
-}
-@media all and (min-width: 1150px) {
-  .page__container {
-    grid-template-columns: 1fr 1fr;
-  }
-}
 .page__header {
   padding: 25px 20px;
 }
@@ -464,21 +450,12 @@ template {
 }
 
 .page__footer {
-  padding: 100px 20px 20px;
-}
-
-@media all and (min-width: 640px) {
-  .page__footer {
-    padding: 50px 50px 50px 0;
-  }
-}
-.page__subscribe {
   padding: 20px;
 }
 
 @media all and (min-width: 640px) {
-  .page__subscribe {
-    padding: 50px 0 50px 50px;
+  .page__footer {
+    padding: 50px;
   }
 }
 .page__qualities {
@@ -752,6 +729,8 @@ template {
     height: 38px;
     justify-self: end;
     margin: 0;
+    grid-row: 1/2;
+    grid-column: 2/3;
   }
 }
 .list {
@@ -1082,8 +1061,7 @@ template {
   }
 }
 .press__pagination-item {
-  width: 12px;
-  height: 12px;
+  padding: 6px;
   background-color: transparent;
   border: 1px solid #E1FD2C;
   border-radius: 50%;
@@ -1098,6 +1076,8 @@ template {
   display: flex;
   grid-area: subscribe;
   flex-direction: column;
+  grid-column: 1/2;
+  grid-row: 1/2;
 }
 
 .subscribe__title {
@@ -1221,8 +1201,14 @@ template {
   display: grid;
   row-gap: 20px;
   grid-area: footer;
+  justify-content: center;
 }
 
+@media all and (min-width: 640px) {
+  .footer {
+    justify-content: space-between;
+  }
+}
 @media all and (min-width: 1150px) {
   .footer {
     border-left: 1px solid #E1FD2C;
@@ -1243,6 +1229,17 @@ template {
   .footer__copyright {
     align-self: end;
     justify-self: end;
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+}
+.footer__subscribe {
+  padding-bottom: 100px;
+}
+
+@media all and (min-width: 640px) {
+  .footer__subscribe {
+    padding: 0;
   }
 }
 .empty {

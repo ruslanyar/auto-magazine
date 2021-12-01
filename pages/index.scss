@@ -15,7 +15,6 @@
 @import '../blocks/page/__header/page__header.scss';
 @import '../blocks/page/__logo/page__logo.scss';
 @import '../blocks/page/__footer/page__footer.scss';
-@import '../blocks/page/__subscribe/page__subscribe.scss';
 @import '../blocks/page/__qualities/page__qualities.scss';
 // Header
 @import '../blocks/header/header.scss';
@@ -81,5 +80,6 @@
 // Footer
 @import '../blocks/footer/footer.scss';
 @import '../blocks/footer/__copyright/footer__copyright.scss';
+@import '../blocks/footer/__subscribe/footer__subscribe.scss';
 
 @import '../blocks/empty/empty.scss';
