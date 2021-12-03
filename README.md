@@ -24,3 +24,6 @@
 - CSS
 - JavaScript
 - SASS
+
+
+[Ссылка](https://ruslanyar.github.io/auto-magazine/) на проект.
