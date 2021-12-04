@@ -1209,11 +1209,6 @@ template {
     justify-content: space-between;
   }
 }
-@media all and (min-width: 1150px) {
-  .footer {
-    border-left: 1px solid #E1FD2C;
-  }
-}
 .footer__copyright {
   font-family: "Source Sans Pro", Arial, sans-serif;
   font-size: 13px;
