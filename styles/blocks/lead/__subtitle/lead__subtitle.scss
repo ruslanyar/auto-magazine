@@ -1,0 +1,13 @@
+.lead__subtitle {
+  @include font($fontFamily, 11px, 14px, normal, 400, $colorSecond);
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+}
+
+@media all and (min-width: $breakpoint-tablet) {
+  .lead__subtitle {
+    font-size: 19px;
+    line-height: 28px;
+  }
+}

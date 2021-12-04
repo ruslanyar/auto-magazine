@@ -1,0 +1,12 @@
+.press {
+  display: grid;
+  border-bottom: $border;
+  position: relative;
+  grid-area: press;
+}
+
+@media all and (min-width: $breakpoint-desktop) {
+  .press {
+    grid-template-columns: 1fr 1fr;
+  }
+}

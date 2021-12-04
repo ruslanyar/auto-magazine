@@ -1,0 +1,15 @@
+.content__press {
+  padding: 20px;
+}
+
+@media all and (min-width: $breakpoint-tablet) {
+  .content__press {
+    padding: 50px;
+  }
+}
+
+@media all and (min-width: $breakpoint-desktop) {
+  .content__press {
+    padding: 0;
+  }
+}

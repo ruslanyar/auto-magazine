@@ -1,0 +1,9 @@
+.form__input_type_email {
+  width: 200px;
+}
+
+@media all and (min-width: $breakpoint-tablet) {
+  .form__input_type_email {
+    width: 260px;
+  }
+}

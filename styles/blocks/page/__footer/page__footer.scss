@@ -1,0 +1,9 @@
+.page__footer {
+  padding: 20px;
+}
+
+@media all and (min-width: $breakpoint-tablet) {
+  .page__footer {
+    padding: 50px;
+  }
+}

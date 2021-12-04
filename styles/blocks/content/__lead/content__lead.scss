@@ -1,0 +1,15 @@
+.content__lead {
+  padding: 60px 20px;
+}
+
+@media all and (min-width: $breakpoint-tablet) {
+  .content__lead {
+    padding: 100px 34px;
+  }
+}
+
+@media all and (min-width: $breakpoint-desktop) {
+  .content__lead {
+    padding: 150px 0;
+  }
+}

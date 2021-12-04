@@ -1,0 +1,11 @@
+.description__text {
+  @include font ($fontFamily, 16px, 27px, normal, 300, $colorSecond);
+  margin: 0;
+}
+
+@media all and (min-width: $breakpoint-tablet) {
+  .description__text {
+    font-size: 30px;
+    line-height: 42px;
+  }
+}

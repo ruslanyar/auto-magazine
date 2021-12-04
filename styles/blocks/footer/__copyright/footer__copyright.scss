@@ -1,0 +1,14 @@
+.footer__copyright {
+  @include font($fontFamily, 13px, 13px, normal, 300, $colorSecond);
+  letter-spacing: 1px;
+  margin: 0 0 0 12px;
+}
+
+@media all and (min-width: $breakpoint-tablet) {
+  .footer__copyright {
+    align-self: end;
+    justify-self: end;
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+}

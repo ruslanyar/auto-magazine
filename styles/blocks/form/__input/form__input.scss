@@ -1,0 +1,33 @@
+.form__input {
+  width: 140px;
+  height: 32px;
+  @include font($fontFamily, 9px, 18px, normal, 400, $colorSecond);
+  background-color: transparent;
+  letter-spacing: 1px;
+  border: $border;
+  display: block;
+  box-sizing: border-box;
+  text-transform: uppercase;
+  padding-left: 11px;
+  text-indent: 0;
+  transition: text-indent 2s ease;
+
+  &::placeholder {
+    color: $colorSecond;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:focus::placeholder {
+    text-indent: -100%;
+    transition: text-indent 2s ease;
+  }
+}
+
+@media all and (min-width: $breakpoint-tablet) {
+  .form__input {
+    width: 170px;
+  }
+}

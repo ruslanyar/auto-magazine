@@ -1,0 +1,14 @@
+.lead {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: $border;
+  grid-area: lead;
+}
+
+@media all and (min-width: $breakpoint-desktop) {
+  .lead {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}

@@ -1,0 +1,20 @@
+.gallery__title {
+  @include font($fontFamily, 26px, 26px, normal, 400, $colorSecond);
+  margin: 0;
+  grid-row: 2/3;
+  grid-column: 1/2;
+}
+
+@media all and (min-width: $breakpoint-tablet) {
+  .gallery__title {
+    font-size: 46px;
+    line-height: 46px;
+    margin-left: 16px;
+  }
+}
+
+@media all and (min-width: $breakpoint-desktop) {
+  .gallery__title {
+    margin-left: 50px;
+  }
+}

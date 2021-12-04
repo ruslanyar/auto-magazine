@@ -1,0 +1,15 @@
+.content {
+  grid-area: content;
+}
+
+@media all and (min-width: $breakpoint-desktop) {
+  .content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    'lead lead'
+    'description qualities'
+    'gallery empty'
+    'press press';
+  }
+}

@@ -1,0 +1,12 @@
+.press__title {
+  display: none;
+  @include font($fontFamily, 46px, 46px, normal, 400, $colorSecond);
+}
+
+@media all and (min-width: $breakpoint-desktop) {
+  .press__title {
+    display: inline-block;
+    margin: 0;
+    padding: 50px;
+  }
+}

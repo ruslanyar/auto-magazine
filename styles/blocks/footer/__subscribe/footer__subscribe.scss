@@ -1,0 +1,9 @@
+.footer__subscribe {
+  padding-bottom: 100px;
+}
+
+@media all and (min-width: $breakpoint-tablet) {
+  .footer__subscribe {
+    padding: 0;
+  }
+}

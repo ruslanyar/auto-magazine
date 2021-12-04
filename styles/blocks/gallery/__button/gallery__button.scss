@@ -1,0 +1,21 @@
+.gallery__button {
+  width: 24px;
+  height: 20px;
+  background-color: transparent;
+  background-size: 24px 20px;
+  background-position:center;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  grid-row: 2/3;
+  grid-column: 1/2;
+  justify-self: end;
+}
+
+@media all and (min-width: $breakpoint-tablet) {
+  .gallery__button {
+    width: 42px;
+    height: 34px;
+    background-size: 42px 34px;
+  }
+}

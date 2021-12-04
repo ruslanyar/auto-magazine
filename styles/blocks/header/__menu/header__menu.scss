@@ -1,0 +1,29 @@
+.header__menu {
+  width: 100%;
+  min-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: -70px;
+  left: 0;
+  background-color: $colorPrime;
+  box-sizing: border-box;
+  z-index: 1;
+  transition: transform .8s ease-in;
+  padding: 0 20px;
+}
+
+@media all and (min-width: $breakpoint-tablet) {
+  .header__menu {
+    padding: 0 34px;
+  }
+}
+
+@media all and (min-width: $breakpoint-desktop) {
+  .header__menu {
+    position: static;
+    z-index: 0;
+    min-height: 0;
+  }
+}

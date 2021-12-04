@@ -1,0 +1,21 @@
+.header__close-btn {
+  width: 20px;
+  height: 20px;
+  background-position: center;
+  background-image: url('../images/close_btn.svg');
+  background-color: $colorPrime;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  transition: opacity, .3s linear;
+
+  &:hover {
+    opacity: .6;
+  }
+}
+
+@media all and (min-width: $breakpoint-desktop) {
+  .header__close-btn {
+    display: none;
+  }
+}

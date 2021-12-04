@@ -1,0 +1,13 @@
+.qualities__title {
+  @include font($fontFamily, 22px, 22px, normal, 400, $colorSecond);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin: 0 0 40px;
+}
+
+@media all and (min-width: $breakpoint-tablet) {
+  .qualities__title {
+    font-size: 30px;
+    line-height: 37px;
+  }
+}

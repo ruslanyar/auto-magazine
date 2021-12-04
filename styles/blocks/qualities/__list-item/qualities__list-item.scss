@@ -1,0 +1,10 @@
+.qualities__list-item {
+  @include font($fontFamily, 16px, 20px, normal, 300, $colorSecond);
+}
+
+@media all and (min-width: $breakpoint-tablet) {
+  .qualities__list-item {
+    font-size: 22px;
+    line-height: 32px;
+  }
+}

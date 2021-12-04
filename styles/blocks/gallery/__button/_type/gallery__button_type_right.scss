@@ -1,0 +1,16 @@
+.gallery__button_type_right {
+  background-image: url('../images/arrow.svg');
+  transform: rotate(180deg);
+}
+
+@media all and (min-width: $breakpoint-tablet) {
+  .gallery__button_type_right {
+    margin-right: 16px;
+  }
+}
+
+@media all and (min-width: $breakpoint-desktop) {
+  .gallery__button_type_right {
+    margin-right: 50px;
+  }
+}

@@ -1,0 +1,10 @@
+.description {
+  border-bottom: $border;
+  grid-area: description;
+}
+
+@media all and (min-width: $breakpoint-desktop) {
+  .description {
+    border-right: $border;
+  }
+}

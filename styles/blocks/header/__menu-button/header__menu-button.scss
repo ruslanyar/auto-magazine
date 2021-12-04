@@ -1,0 +1,32 @@
+.header__menu-button {
+  width: 20px;
+  height: 16px;
+  background-image: url('../images/menu_button.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: transparent;
+  border: none;
+  padding: 10px 0;
+  cursor: pointer;
+
+  transition: opacity, .3s linear;
+
+  &:hover {
+    opacity: .6;
+  }
+}
+
+@media all and (min-width: $breakpoint-tablet) {
+  .header__menu-button {
+    width: 26px;
+    height: 20px;
+    padding: 13px 0;
+  }
+}
+
+@media all and (min-width: $breakpoint-desktop) {
+  .header__menu-button {
+    display: none;
+  }
+}
